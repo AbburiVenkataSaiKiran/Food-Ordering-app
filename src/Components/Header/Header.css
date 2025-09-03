@@ -1,0 +1,17 @@
+.header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #a84444;
+    position: fixed;
+    top:0;
+}
+.title{
+    font-family:sans-serif;
+    font-weight: bolder;
+    color:white;
+    font-size: 3rem;
+    margin-left: 2rem;
+   
+}

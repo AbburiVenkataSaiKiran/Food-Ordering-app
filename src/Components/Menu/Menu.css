@@ -1,0 +1,19 @@
+.menu{
+    width:110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px;
+    padding: 1rem;
+}
+.menucard{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem;
+    
+}

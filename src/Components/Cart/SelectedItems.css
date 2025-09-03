@@ -1,0 +1,28 @@
+.left{
+    display:flex;
+    color:rgb(172, 98, 2);
+    gap:2rem;
+}
+
+li{
+    list-style: none;
+}
+.selected-items{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quantity{
+    background-color:white;
+    border:1px solid rgb(172, 98, 2);
+    width:3rem;
+    border-radius:1rem;
+    color:rgb(172, 98, 2);
+    margin-right:1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+hr{
+    width :100%;
+    margin:0.5rem;
+}
