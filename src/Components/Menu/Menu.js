@@ -27,14 +27,14 @@ function Menu() {
         });
       }
 
-      setItems(loadedItems); // ✅ update state -> triggers re-render
+      setItems(loadedItems);
     } catch (error) {
       console.error(error);
     }
   }
 
   useEffect(() => {
-    menuData(); // ✅ run only once after first render
+    menuData(); 
   }, []);
 
   return (
