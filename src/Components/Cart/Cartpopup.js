@@ -3,7 +3,7 @@ import "./Cartpopup.css";
 import { useContext } from "react";
 import {data} from '../data';
 function Cartpopup(){
-    const {orderItems,setCartState}=useContext(data);
+    const {orderItems,setCartState,setConfirm}=useContext(data);
     let total=0.00;
     for(let i=0;i<orderItems.length;i++){
         total+=orderItems[i].price*orderItems[i].quantity;
@@ -12,7 +12,10 @@ function Cartpopup(){
     function closeCart(){
         setCartState(false);
     }
-   
+    function confirm(){
+        setConfirm(true);
+        setCartState(false);
+    }
     return(
         <div className="backdrop">
             <div className="model">
@@ -24,7 +27,7 @@ function Cartpopup(){
                     </div>
                     <div className="buttons">
                         <button className="close" onClick={closeCart}>Close</button>
-                        <button className="order" onClick={() => window.location.reload()}>Order</button>
+                        <button className="order" onClick={confirm}>Order</button>
                     </div>
                 </div>
             </div>

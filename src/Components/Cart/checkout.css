@@ -1,0 +1,73 @@
+.checkout{
+    background-color:white;
+    width:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width:20%;
+    transform: translate(-50%, -30%);
+    z-index: 20; 
+
+}
+h1{
+    color:rgb(241, 136, 7)
+}
+.form{
+    padding: 1rem;
+}
+.input{
+    height:2rem;
+    border-radius:1rem;
+    font-size: 1rem;
+    text-align: center;
+    outline:none;
+    border-color:black;
+    
+    
+}
+.input:focus{
+    background-color:rgb(245, 219, 184);
+    border-color:rgb(236, 153, 44);
+   
+
+}
+.area{
+    height: 5rem;
+}
+.confirm{
+    background-color:rgb(236, 153, 44);
+    color:white;
+    border:none;
+    border-radius: 2rem;
+    padding:1rem;
+    cursor:pointer;
+   
+    margin-top:1rem;
+    &:hover{
+        background-color:white;
+        color:rgb(236, 153, 44);
+        border:1px solid rgb(236, 153, 44);
+    }
+}
+.cancel{
+    background-color:white;
+    color:rgb(236, 153, 44);
+    border:1px solid rgb(236, 153, 44);
+    border-radius: 2rem;
+    padding:1rem;
+    margin-left:1rem;
+    cursor:pointer;
+    &:hover{
+        background-color:rgb(243, 140, 5);
+        color:white;
+        
+    }
+
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }

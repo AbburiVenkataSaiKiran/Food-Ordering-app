@@ -1,4 +1,4 @@
-
+import CheckOut from './Components/Cart/CheckOut';
 import Header from './Components/Header/Header';
 import Msg from "./Components/Msg";
 import Menu from "./Components/Menu/Menu" ;
@@ -11,15 +11,17 @@ function App() {
  
   const [orderItems,setOrderItems]=useState([]);
   const[cart,setCartState]=useState(false);
+  const[confirm,setConfirm]=useState(false);
 
   
   return (
     <>
-    <data.Provider value={{orderItems,setOrderItems,setCartState}}>
+    <data.Provider value={{orderItems,setOrderItems,setCartState,setConfirm}}>
     <Header />
     <Msg />
     <Menu />
     {cart && <Cartpopup/>}
+    {confirm && <CheckOut/>}
     </data.Provider>
     
     </>
